@@ -15,22 +15,23 @@
   
   
   
-  <title>Hello! my-first-blog | 夏天的github博客</title>
+  <title>SSH端口转发研究 | 夏天的github博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="学习github hexo ​    刚学习了github里写博客，Hexo是博客发布工具，支持Markdown格式，随便选的，用起来还不错。 ​    刚学Linux的时候在CSDN上也写过一点博客，不过当时技术实在烂，怕误人子弟，就想算了，等有点技术底子的时候再写，现在终于到这一天了。">
+  <meta name="description" content="转发条件   网络连通性要求 本地端口转发（源主机输命令） 远程端口转发 （代理主机输命令）    代理主机→源主机 ✔ ✔   代理主机→目的主机 ✔ ✔   源主机→代理主机 ✔">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello! my-first-blog">
-<meta property="og:url" content="https://zcp159.github.io/2019/12/24/my-first-blog/index.html">
+<meta property="og:title" content="SSH端口转发研究">
+<meta property="og:url" content="https://zcp159.github.io/2019/12/25/SSH%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91%E7%A0%94%E7%A9%B6/index.html">
 <meta property="og:site_name" content="夏天的github博客">
-<meta property="og:description" content="学习github hexo ​    刚学习了github里写博客，Hexo是博客发布工具，支持Markdown格式，随便选的，用起来还不错。 ​    刚学Linux的时候在CSDN上也写过一点博客，不过当时技术实在烂，怕误人子弟，就想算了，等有点技术底子的时候再写，现在终于到这一天了。">
+<meta property="og:description" content="转发条件   网络连通性要求 本地端口转发（源主机输命令） 远程端口转发 （代理主机输命令）    代理主机→源主机 ✔ ✔   代理主机→目的主机 ✔ ✔   源主机→代理主机 ✔">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://zcp159.github.io/pictures/323489.jpg">
-<meta property="article:published_time" content="2019-12-24T02:49:14.000Z">
-<meta property="article:modified_time" content="2019-12-25T08:49:26.245Z">
+<meta property="og:image" content="https://zcp159.github.io/pictures/SSH_picture1.png">
+<meta property="og:image" content="https://zcp159.github.io/pictures/SSH_picture2.png">
+<meta property="article:published_time" content="2019-12-25T11:49:14.000Z">
+<meta property="article:modified_time" content="2019-12-25T08:51:20.870Z">
 <meta property="article:author" content="夏天风景">
-<meta property="article:tag" content="Github">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://zcp159.github.io/pictures/323489.jpg">
+<meta name="twitter:image" content="https://zcp159.github.io/pictures/SSH_picture1.png">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -74,7 +75,7 @@
 </header>
 
       <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-my-first-blog" class="post-my-first-blog post type-post status-publish format-standard hentry">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-SSH端口转发研究" class="post-SSH端口转发研究 post type-post status-publish format-standard hentry">
     <!---->
 
       <header class="entry-header">
@@ -82,40 +83,88 @@
         
   
     <h1 class="entry-title article-title">
-      Hello! my-first-blog
+      SSH端口转发研究
     </h1>
   
 
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="https://zcp159.github.io/2019/12/24/my-first-blog/" data-id="ck4l28m0o0004a0uc4xmrb9fr" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="https://zcp159.github.io/2019/12/25/SSH%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91%E7%A0%94%E7%A9%B6/" data-id="ck4l28m0n0003a0ucf92z2s2z" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
     <div class="entry-content">
       
-        <ul>
-<li><p>学习github hexo</p>
-<p>​    刚学习了github里写博客，Hexo是博客发布工具，支持Markdown格式，随便选的，用起来还不错。</p>
-<p>​    刚学Linux的时候在CSDN上也写过一点博客，不过当时技术实在烂，怕误人子弟，就想算了，等有点技术底子的时候再写，现在终于到这一天了。</p>
-</li>
-</ul>
-<p><img src="/pictures/323489.jpg" alt="蓝天白云"></p>
+        <h2 id="转发条件"><a href="#转发条件" class="headerlink" title="转发条件"></a>转发条件</h2><table>
+<thead>
+<tr>
+<th align="center">网络连通性要求</th>
+<th align="center">本地端口转发（源主机输命令）</th>
+<th align="center">远程端口转发 （代理主机输命令）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">代理主机→源主机</td>
+<td align="center">✔</td>
+<td align="center">✔</td>
+</tr>
+<tr>
+<td align="center">代理主机→目的主机</td>
+<td align="center">✔</td>
+<td align="center">✔</td>
+</tr>
+<tr>
+<td align="center">源主机→代理主机</td>
+<td align="center">✔</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p><img src="/pictures/SSH_picture1.png" alt="SSH端口转发示意图"></p>
+ <a id="more"></a>
+
+<h3 id="本地端口转发（HTTP可用）"><a href="#本地端口转发（HTTP可用）" class="headerlink" title="本地端口转发（HTTP可用）"></a>本地端口转发（HTTP可用）</h3><p>有时，绑定本地端口还不够，还必须指定数据传送的目标主机，从而形成点对点的”端口转发”。为了区别后文的”远程端口转发”，我们把这种情况称为”本地端口转发”（Local forwarding）。</p>
+<p><img src="/pictures/SSH_picture2.png" alt="SSH端口转发示意图"></p>
+<p>假定host1是本地主机，host2是远程主机。由于种种原因，这两台主机之间无法连通。但是，另外还有一台host3，可以同时连通前面两台主机。因此，很自然的想法就是，通过host3，将host1连上host2。在host1执行下面的命令：<br>$$<br>$ ssh -L (本地host1任意端口):(目的主机host2 IP):(目的主机host2端口) (代理主机host3 IP)<br>$$<br>命令中的L参数一共接受三个值，分别是”本地端口:目标主机:目标主机端口”，它们之间用冒号分隔。这条命令的意思，就是指定SSH绑定本地端口2121，然后指定host3将所有的数据，转发到目标主机host2的21端口（假定host2运行FTP，默认端口为21）。<br>这样一来，我们只要连接host1的2121端口，就等于连上了host2的21端口。”本地端口转发”使得host1和host3之间仿佛形成一个数据传输的秘密隧道，因此又被称为”SSH隧道”。</p>
+<h4 id="例一"><a href="#例一" class="headerlink" title="例一"></a>例一</h4><table>
+<thead>
+<tr>
+<th>主机类型</th>
+<th>IP</th>
+<th>端口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>host1-源主机</td>
+<td>10.32.157.98</td>
+<td>80</td>
+</tr>
+<tr>
+<td>host2-目标主机</td>
+<td>10.33.48.17</td>
+<td>8080</td>
+</tr>
+<tr>
+<td>host3-代理主机</td>
+<td>192.168.225.129</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>$$<br>host1输入命令：ssh -L 80:10.33.48.17:8080 192.168.225.129<br>$$</p>
 
       
     </div><!-- .entry-content -->
 
     <footer class="entry-meta">
-    <a href="/2019/12/24/my-first-blog/">
-    <time datetime="2019-12-24T02:49:14.000Z" class="entry-date">
-        2019-12-24
+    <a href="/2019/12/25/SSH%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91%E7%A0%94%E7%A9%B6/">
+    <time datetime="2019-12-25T11:49:14.000Z" class="entry-date">
+        2019-12-25
     </time>
 </a>
     
     
   <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/" rel="tag">Github</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li></ul>
 
     </footer>
 </article>
@@ -125,10 +174,8 @@
 <nav class="nav-single">
     <h3 class="assistive-text">文章导航</h3>
     
-        <span class="nav-previous"><a href="/2019/12/25/SSH%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91%E7%A0%94%E7%A9%B6/" rel="prev"><span class="meta-nav">←</span> SSH端口转发研究</a></span>
     
-    
-        <span class="nav-next"><a href="/2019/12/23/hello-world/" rel="next">Hello World <span class="meta-nav">→</span></a></span>
+        <span class="nav-next"><a href="/2019/12/24/my-first-blog/" rel="next">Hello! my-first-blog <span class="meta-nav">→</span></a></span>
     
 </nav><!-- .nav-single -->
 
