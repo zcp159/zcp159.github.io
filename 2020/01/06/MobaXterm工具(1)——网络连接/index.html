@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <meta name="description" content="description选项" />
+  
+
+  
+  <meta name="keywords" content="keywords选项" />
+  
+  
+  
+  
+  
+  
+  <title>MobaXterm工具(1)——网络连接 | 夏天的github博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="SSH连接">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MobaXterm工具(1)——网络连接">
+<meta property="og:url" content="https://zcp159.github.io/2020/01/06/MobaXterm%E5%B7%A5%E5%85%B7(1)%E2%80%94%E2%80%94%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/index.html">
+<meta property="og:site_name" content="夏天的github博客">
+<meta property="og:description" content="SSH连接">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://zcp159.github.io/pictures/MobaXterm_1_picture1.png">
+<meta property="og:image" content="https://zcp159.github.io/pictures/MobaXterm_1_picture2.png">
+<meta property="og:image" content="https://zcp159.github.io/pictures/MobaXterm_1_picture3.png">
+<meta property="og:image" content="https://zcp159.github.io/pictures/MobaXterm_1_picture4.png">
+<meta property="og:image" content="https://zcp159.github.io/pictures/MobaXterm_1_picture5.png">
+<meta property="og:image" content="https://zcp159.github.io/pictures/MobaXterm_1_picture6.png">
+<meta property="og:image" content="https://zcp159.github.io/pictures/MobaXterm_1_picture7.png">
+<meta property="og:image" content="https://zcp159.github.io/pictures/MobaXterm_1_picture8.png">
+<meta property="og:image" content="https://zcp159.github.io/pictures/MobaXterm_1_picture9.png">
+<meta property="article:published_time" content="2020-01-06T08:43:20.000Z">
+<meta property="article:modified_time" content="2020-01-06T08:51:08.566Z">
+<meta property="article:author" content="夏天风景">
+<meta property="article:tag" content="工具">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zcp159.github.io/pictures/MobaXterm_1_picture1.png">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+
+  
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/" title="夏天的github博客" rel="home">夏天的github博客</a>
+      </h1>
+      
+        <h2 class="site-description">
+          <a href="/" id="subtitle">『你们媒体千万要记着，不要「见得风，是得雨」。接到消息，你们媒体本身也要判断。』</a>
+        </h2>
+      
+    </hgroup>
+
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">菜单</button>
+            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">主页</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">文章</a></li>
+                
+                </ul>
+            </div>
+    </nav>
+</header>
+
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-MobaXterm工具(1)——网络连接" class="post-MobaXterm工具(1)——网络连接 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title article-title">
+      MobaXterm工具(1)——网络连接
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="https://zcp159.github.io/2020/01/06/MobaXterm%E5%B7%A5%E5%85%B7(1)%E2%80%94%E2%80%94%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/" data-id="ck527ikt90000k8uc1vwwgvje" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h2 id="SSH连接"><a href="#SSH连接" class="headerlink" title="SSH连接"></a>SSH连接</h2><p><img src="/pictures/MobaXterm_1_picture1.png" alt="SSH连接图"></p>
+<a id="more"></a>
+
+<h3 id="选项介绍"><a href="#选项介绍" class="headerlink" title="选项介绍"></a>选项介绍</h3><ul>
+<li>Execute command</li>
+</ul>
+<p>连接后，将在远程服务器上执行指定的命令。</p>
+<p>您可以指定多个命令并用“;”分隔它们要么 ”＆＆”。</p>
+<p>例如：</p>
+<p>pwd; uname -a</p>
+<p><img src="/pictures/MobaXterm_1_picture2.png" alt="Execute command"></p>
+<p>测试一下</p>
+<p><img src="/pictures/MobaXterm_1_picture3.png" alt="MobaXterm_1_picture3"></p>
+<ul>
+<li>X11-Forwarding</li>
+</ul>
+<p>X11-Forwarding（通过SSH通道自动显示重定向）</p>
+<p>X11-Forwarding是一种允许X11协议通过现有SSH通道路由的机制。该解决方案的主要优点是：</p>
+<ol>
+<li><p>X11协议将被加密</p>
+</li>
+<li><p>可以压缩X11协议</p>
+</li>
+<li><p>无需为X11设置新的通信通道（以及在防火墙中打开通信端口）：网络数据包通过现有的SSH连接</p>
+</li>
+</ol>
+<ul>
+<li>Compression</li>
+</ul>
+<p>压缩通过SSH通道传输的数据,这对慢速连接（WAN）很有用</p>
+<ul>
+<li>Remote environment</li>
+</ul>
+<p>在新窗口中从远程服务器启动完整桌面。例如，在Raspberry Pi设备上，您可以启动LXDE。</p>
+<ul>
+<li>Use private key</li>
+</ul>
+<p>指定用于无密码登录的私钥。</p>
+<p>可以使用以下命令生成新密钥：</p>
+<p>ssh-keygen -t rsa</p>
+<p>要么</p>
+<p>ssh-keygen -t dsa</p>
+<p>还可以使用嵌入式MobaKeyGen应用程序（可在“工具”菜单中找到）创建和管理SSH密钥。</p>
+<ul>
+<li>Adapt locales on remote server</li>
+</ul>
+<p>调整远程服务器上的区域设置</p>
+<p>尝试将本地语言设置发送到远程服务器：</p>
+<p>这允许远程服务器知道本地使用的语言和字符集设置。</p>
+<p>注意：远程服务器必须支持这些语言设置。</p>
+<ul>
+<li>SSH-browser type</li>
+</ul>
+<p>显示图形化SSH浏览器，允许您浏览远程服务器内容。</p>
+<p>可用设置：</p>
+<blockquote>
+<p>无：禁用SSH浏览器</p>
+</blockquote>
+<blockquote>
+<p>SFTP协议：启用SSH浏览器并使用SFTP协议</p>
+</blockquote>
+<blockquote>
+<p>SCP（增强速度）：启用SSH浏览器并使用最新的SCP协议实现最大传输速度</p>
+</blockquote>
+<blockquote>
+<p>SCP（正常速度）：启用SSH浏览器并使用旧的SCP协议实现传统支持</p>
+</blockquote>
+<p>注意：与FTP协议不同，SSH浏览器使用安全的加密SSH通道进行传输。</p>
+<h2 id="RDP"><a href="#RDP" class="headerlink" title="RDP"></a>RDP</h2><p><img src="/pictures/MobaXterm_1_picture4.png" alt="MobaXterm_1_picture4"></p>
+<p><img src="/pictures/MobaXterm_1_picture5.png" alt="MobaXterm_1_picture5"></p>
+<p><img src="/pictures/MobaXterm_1_picture6.png" alt="MobaXterm_1_picture6"></p>
+<ul>
+<li>Redirect drives</li>
+</ul>
+<p>重定向驱动器</p>
+<p>在远程服务器上显示本地驱动器</p>
+<ul>
+<li>Enhanced graphics</li>
+</ul>
+<p>增强的图形</p>
+<p>使用远程桌面的增强设置</p>
+<ul>
+<li>Redirect clipboard</li>
+</ul>
+<p>重定向剪贴板</p>
+<p>允许从/到RDP选项卡进行复制/粘贴</p>
+<ul>
+<li>Forward keyboard shortcuts</li>
+</ul>
+<p>转发键盘快捷键</p>
+<p>键盘快捷方式将转发到远程桌面，而不是由本地Windows环境处理</p>
+<h2 id="FTP"><a href="#FTP" class="headerlink" title="FTP"></a>FTP</h2><p><img src="/pictures/MobaXterm_1_picture7.png" alt="MobaXterm_1_picture7"></p>
+<p><img src="/pictures/MobaXterm_1_picture8.png" alt="MobaXterm_1_picture8"></p>
+<ul>
+<li>Passive mode</li>
+</ul>
+<p>被动模式</p>
+<p>建议使用此模式，尤其是在防火墙后面的情况下。</p>
+<p>在此模式下，FTP客户端启动2个连接（控制和数据），而在活动模式下，控制连接由客户端启动，服务器启动数据连接。</p>
+<ul>
+<li>ASCII mode</li>
+</ul>
+<p>ASCII模式</p>
+<p>传输过程中文本文件将转换为Unix / Dos格式。</p>
+<p>警告：此功能不适用于二进制文件！</p>
+<ul>
+<li>Encrypt data channel</li>
+</ul>
+<p>加密数据通道</p>
+<p>如果选中此选项，则将加密用于数据传输的通道（文件，目录列表），否则仅加密命令通道。</p>
+<h2 id="SFTP"><a href="#SFTP" class="headerlink" title="SFTP"></a>SFTP</h2><p><img src="/pictures/MobaXterm_1_picture9.png" alt="MobaXterm_1_picture9"></p>
+<ul>
+<li>ASCII mode</li>
+</ul>
+<p>ASCII模式</p>
+<p>传输过程中文本文件将转换为Unix / Dos格式。</p>
+<p>警告：此功能不适用于二进制文件！</p>
+<ul>
+<li>Preserve files dates</li>
+</ul>
+<p>保留文件日期</p>
+<p>如果要在通过SFTP会话传输文件日期时保留文件日期，请选中此设置</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2020/01/06/MobaXterm%E5%B7%A5%E5%85%B7(1)%E2%80%94%E2%80%94%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/">
+    <time datetime="2020-01-06T08:43:20.000Z" class="entry-date">
+        2020-01-06
+    </time>
+</a>
+    
+    
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a></li></ul>
+
+    </footer>
+</article>
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+    
+        <span class="nav-next"><a href="/2020/01/02/PyMySQL/" rel="next">Python操作数据库(PyMySQL) <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value="" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="搜索" />
+    </div>
+</form></aside>
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Music</h3>
+    <div class="widget-content">
+      <audio src="/music/karera_wo_tame_no_koushinnkyoku-95a27a16.mp3" controls="controls"
+             style="width:100%">
+        您的浏览器不支持 audio 标签。
+      </audio>
+    </div>
+  </aside>
+
+  
+    
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/2020/01/06/MobaXterm%E5%B7%A5%E5%85%B7(1)%E2%80%94%E2%80%94%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/">MobaXterm工具(1)——网络连接</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/02/PyMySQL/">Python操作数据库(PyMySQL)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/26/SSH%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91%E7%A0%94%E7%A9%B6/">SSH端口转发研究</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/24/my-first-blog/">Hello! my-first-blog</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/23/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget-content">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </aside>
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-content tagcloud">
+      <a href="/tags/Github/" style="font-size: 20px;">Github</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 10px;">工具</a>
+    </div>
+  </aside>
+
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; 2020 夏天风景
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</footer>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/js/share.js'];</script>
+
+<script src="/js/jquery-3.3.1.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>
